@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 local set = vim.keymap.set
 
-set("n", "<leader>e", ":NvimTreeToggle<CR>")--
+set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 set("i", "<C-b>","<C-o>*")
 set("i", "<C-g>","<C-o>#")
@@ -17,11 +17,9 @@ set({"i", "n"}, "<C-j>", "<C-w>j")
 set({"i", "n"}, "<C-h>", "<C-w>h")
 set({"i", "n"}, "<C-l>", "<C-w>l")
 
--- set({"n", "v", "i"}, )
-
 set({"n", "v"}, "<leader>y", [["+y]])
 set("n", "<leader>Y", [["+Y]])
-set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 set("n", "<leader>f", vim.lsp.buf.format)
 set({"n", "i"}, "<C-a>", function ()vim.lsp.buf.code_action()end)

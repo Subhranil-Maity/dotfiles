@@ -26,7 +26,7 @@ lspConfig = function()
 	local cmp_mappings = lsp_zero.defaults.cmp_mappings({
 		['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
 		['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-		['<C-Space>'] = cmp.mapping.confirm({ select = true }),
+		['<C-m>'] = cmp.mapping.confirm({ select = true }),
 		["<C-y>"] = cmp.mapping.complete(),
 	})
 	cmp.setup({

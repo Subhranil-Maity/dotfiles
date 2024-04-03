@@ -1,2 +1,2 @@
-require("mynvimconfig.remap")
 require("mynvimconfig.set")
+require("mynvimconfig.remap")
