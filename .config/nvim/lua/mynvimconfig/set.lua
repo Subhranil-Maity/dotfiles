@@ -19,3 +19,14 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 
+vim.opt.signcolumn = 'yes'
+
+
+
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "",
+	callback = function ()
+		vim.highlight.on_yank()
+	end
+})

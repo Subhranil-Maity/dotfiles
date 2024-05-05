@@ -2,6 +2,8 @@ vim.g.mapleader = " "
 
 local set = vim.keymap.set
 
+
+
 set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 set("i", "<C-b>","<C-o>*")
@@ -18,6 +20,12 @@ set({"i", "n"}, "<C-h>", "<C-w>h")
 set({"i", "n"}, "<C-l>", "<C-w>l")
 
 set({"n", "v"}, "<leader>y", [["+y]])
+-- set({"n", "v"}, "<leader>y", function ()
+-- 	-- local line = vim.cmp("join(getline(\"'<\", \"'>\"), \"\n\")")
+-- 	local selected_text = vim.fn.getline("'<", "'>")
+-- 	print(table.concat(selected_text, "\n"))
+--
+-- end)
 set("n", "<leader>Y", [["+Y]])
 set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 

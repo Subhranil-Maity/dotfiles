@@ -1,6 +1,5 @@
 
 LuaLineConfig = function()
-	
 	require('lualine').setup {
 		options = {
 			icons_enabled = true,
@@ -46,9 +45,9 @@ end
 
 return {
 	'nvim-lualine/lualine.nvim',
-	dependencies = { 
-		'nvim-tree/nvim-web-devicons', 
-		lazy = true 
+	dependencies = {
+		'nvim-tree/nvim-web-devicons',
+		lazy = true
 	},
 	config = LuaLineConfig
 }
