@@ -1,4 +1,4 @@
-return {
+return{
   "folke/trouble.nvim",
   opts = {}, -- for default options, refer to the configuration section for custom setup.
   cmd = "Trouble",
@@ -8,6 +8,16 @@ return {
       "<cmd>Trouble diagnostics toggle<cr>",
       desc = "Diagnostics (Trouble)",
     },
+		{
+			"[d",
+			"<cmd>Trouble diagnostics next<cr>",
+			desc = " "
+		},
+		{
+			"]d",
+			"<cmd>Trouble diagnostics prev<cr>",
+			desc = " "
+		},
     {
       "<leader>xX",
       "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",

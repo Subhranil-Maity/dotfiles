@@ -6,20 +6,25 @@ LspConfig = function()
 			function(server_name)
 				require("lspconfig")[server_name].setup {}
 			end,
-	-- 		["lua_ls"] = function()
-	-- 			local lspconfig = require("lspconfig")
-	-- 			lspconfig.lua_ls.setup {
-	-- 				settings = {
-	-- 					Lua = {
-	-- 						diagnostics = {
-	-- 							globals = { "vim" },
-	-- 						}
-	-- 					}
-	-- 				}
-	-- 		}
-	-- 	end,
-	}
-})
+			-- ['rust_analyzer'] = {
+			-- 	diagnostics = {
+			-- 		enable = false,
+			-- 	}
+			-- },
+			["lua_ls"] = function()
+				local lspconfig = require("lspconfig")
+				lspconfig.lua_ls.setup {
+					settings = {
+						Lua = {
+							diagnostics = {
+								globals = { "vim" },
+							}
+						}
+					}
+				}
+			end,
+		}
+	})
 	local cmp = require('cmp')
 	local cmp_select = { behavior = cmp.SelectBehavior.Select }
 	cmp.setup({
@@ -57,12 +62,6 @@ LspConfig = function()
 		signs = true,
 		underline = true,
 		update_in_insert = true,
-		severity_sort = true,
-		float = {
-			focusable = false,
-			style = "minimal",
-			border = "rounded",
-		},
 	})
 end
 
