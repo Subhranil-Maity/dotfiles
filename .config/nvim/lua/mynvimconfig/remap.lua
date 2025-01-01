@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 local set = vim.keymap.set
 
 
+-- set({"n", "i"}, ";w", "<cmd>:w<CR>")
 
 set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
@@ -14,10 +15,10 @@ set("n", "<C-u>", "<C-u>zz")
 set("n", "n", "nzzzv")
 set("n", "N", "Nzzzv")
 
-set({"i", "n"}, "<C-k>", "<C-w>k")
-set({"i", "n"}, "<C-j>", "<C-w>j")
-set({"i", "n"}, "<C-h>", "<C-w>h")
-set({"i", "n"}, "<C-l>", "<C-w>l")
+-- set({"i", "n"}, "<C-k>", "<C-w>k")
+-- set({"i", "n"}, "<C-j>", "<C-w>j")
+-- set({"i", "n"}, "<C-h>", "<C-w>h")
+-- set({"i", "n"}, "<C-l>", "<C-w>l")
 
 set({"n", "v"}, "<leader>y", [["+y]])
 -- set({"n", "v"}, "<leader>y", function ()
@@ -53,7 +54,7 @@ set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make sp
 set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
 
-set('n', 'C-h', ':TmuxNavigateLeft<cr>', {})
-set('n', 'C-j', ':TmuxNavigateDown<cr>', {})
-set('n', 'C-k', ':TmuxNavigateUp<cr>', {})
-set('n', 'C-l', ':TmuxNavigateRight<cr>', {})
+-- set('n', 'C-h', ':TmuxNavigateLeft<cr>', {})
+-- set('n', 'C-j', ':TmuxNavigateDown<cr>', {})
+-- set('n', 'C-k', ':TmuxNavigateUp<cr>', {})
+-- set('n', 'C-l', ':TmuxNavigateRight<cr>', {})
