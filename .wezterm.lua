@@ -17,6 +17,7 @@ config.font = wezterm.font("JetBrains Mono")
 config.window_background_opacity = 0.9
 config.macos_window_background_blur = 55
 
+config.default_cursor_style = 'SteadyBar'
 -- local is_windows = package.config:sub(1, 1) == "\\"
 --
 -- if is_windows then
