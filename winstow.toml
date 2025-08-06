@@ -1,0 +1,28 @@
+[nvim]
+from = "./.config/nvim/"
+to = "%LOCALAPPDATA%/nvim"
+
+[wezterm]
+from = "./.wezterm.lua"
+to = "%USERPROFILE%/.wezterm.lua"
+
+[yazi]
+from = "./.config/yazi"
+to = "%AppData%/yazi/config"
+
+[clink_starship]
+from = "./.config/clink/starship.lua"
+to = "%LOCALAPPDATA%/clink/starship.lua"
+
+[starship]
+from = "./.config/starship.toml"
+to = "%LOCALAPPDATA%/starship.toml"
+
+[pwsh]
+from = "./.config/powershell"
+to = "%USERPROFILE%/Documents/PowerShell"
+ 
+
+[bat]
+from = "./.config/bat"
+to = "%APPDATA%/bat"
